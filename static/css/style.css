@@ -161,11 +161,11 @@ hr {
     width: 80%;
 }
 
-.clickable_img {
-    display: none;
+.clickable {
+    margin-bottom: 8px;
 }
 
-.mochiuta::after {
+.works::after {
     content: "";
     clear: both;
     display: block;
@@ -179,6 +179,10 @@ hr {
 
 .example_img {
     width: 100%;
+}
+
+.qr {
+    width: 15%;
 }
 
 .design {
@@ -265,9 +269,8 @@ footer {
         width: 30%;
     }
 
-    .clickable_img {
-        display: block;
-        margin-bottom: 8px;
+    .qr {
+        width: 30%;
     }
 
     .address {
