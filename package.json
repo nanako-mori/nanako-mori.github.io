@@ -1,0 +1,25 @@
+{
+  "name": "nanako-mori.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanako-mori/nanako-mori.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nanako-mori/nanako-mori.github.io/issues"
+  },
+  "homepage": "https://github.com/nanako-mori/nanako-mori.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.36.0"
+  }
+}
