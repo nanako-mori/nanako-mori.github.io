@@ -10,6 +10,10 @@
     src: url(../fonts/mplus-1p-bold.ttf);
 }
 
+$base_color: #fff;
+$main_color: #222;
+$sp_img_width: 30%;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -35,7 +39,7 @@
 body {
     font-family: 'mplus';
     font-size: 16px;
-    color: #222;
+    color: $main_color;
 }
 
 ul {
@@ -69,7 +73,7 @@ header {
 
 .name,
 .position {
-    color: #fff;
+    color: $base_color;
     text-align: center;
 }
 
@@ -96,7 +100,7 @@ header {
 }
 
 .menu_item {
-    color: #fff;
+    color: $base_color;
     font-size: 24px;
     text-decoration: none;
 }
@@ -204,24 +208,24 @@ hr {
 }
 
 .contact {
-    background-color: #222;
+    background-color: $main_color;
     padding: 24px 0 64px 0;
 }
 
 .white {
-    color: #fff;
+    color: $base_color;
 }
 
 .address {
-    background-color: #fff;
+    background-color: $base_color;
     font-size: 24px;
     display: inline-block;
     padding: 8px;
 }
 
 footer {
-    background-color: #222;
-    color: #fff;
+    background-color: $main_color;
+    color: $base_color;
     padding: 8px 16px;
     text-align: right;
 }
@@ -256,21 +260,15 @@ footer {
     }
 
     .tools > li,
-    .account_item {
-        width: 30%;
+    .account_item,
+    .example,
+    .qr {
+        width: $sp_img_width;
     }
 
     .tools_item,
     .account_icon {
         width: 100%;
-    }
-
-    .example {
-        width: 30%;
-    }
-
-    .qr {
-        width: 30%;
     }
 
     .address {

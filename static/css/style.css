@@ -252,21 +252,15 @@ footer {
   }
 
   .tools > li,
-.account_item {
+.account_item,
+.example,
+.qr {
     width: 30%;
   }
 
   .tools_item,
 .account_icon {
     width: 100%;
-  }
-
-  .example {
-    width: 30%;
-  }
-
-  .qr {
-    width: 30%;
   }
 
   .address {
