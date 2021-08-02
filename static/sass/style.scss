@@ -74,7 +74,7 @@ header {
 .name,
 .position {
     color: $base_color;
-    text-align: center;
+    @extend %center;
 }
 
 .name {
@@ -147,7 +147,7 @@ hr {
 }
 
 .title_md {
-    text-align: center;
+    @extend %center;
     margin-bottom: 16px;
 }
 
@@ -156,8 +156,9 @@ hr {
     flex-flow: row wrap;
 }
 
-.tools > li {
-    text-align: center;
+.tools > li,
+.account_item {
+    @extend %center;
     width: 20%;
 }
 
@@ -196,11 +197,6 @@ hr {
 .account {
     display: flex;
     justify-content: space-around;
-}
-
-.account_item {
-    text-align: center;
-    width: 20%;
 }
 
 .account_icon {
