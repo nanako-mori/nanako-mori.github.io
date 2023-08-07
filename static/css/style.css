@@ -12,7 +12,9 @@
   padding: 0;
 }
 
-.center {
+.center, .tools > li,
+.account_item, .title_md, .name,
+.position {
   text-align: center;
 }
 
@@ -24,13 +26,15 @@
   margin-bottom: 24px;
 }
 
-.mb48 {
-  margin-bottom: 48px;
+.mb64 {
+  margin-bottom: 64px;
 }
 
 body {
   font-family: "mplus";
   font-size: 16px;
+  letter-spacing: 0.08em;
+  line-height: 1.8;
   color: #222;
 }
 
@@ -66,18 +70,37 @@ header {
 .name,
 .position {
   color: #fff;
-  text-align: center;
 }
 
 .name {
   font-size: 48px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 600px) {
+  .name {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .name {
+    font-size: 32px;
+  }
 }
 
 .position {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 600px) {
+  .position {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .position {
+    font-size: 20px;
+  }
 }
 
 .menu {
@@ -96,22 +119,32 @@ header {
   font-size: 24px;
   text-decoration: none;
 }
+@media screen and (max-width: 600px) {
+  .menu_item {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .menu_item {
+    font-size: 18px;
+  }
+}
 
 .contents {
-  margin: 4em auto;
+  margin: 7em auto;
   max-width: 1024px;
   width: 80%;
 }
 
 .profile {
-  margin-bottom: 64px;
+  margin-bottom: 80px;
 }
 
 hr {
   background-color: #f0db00;
   border: none;
   border-radius: 2px;
-  margin: 8px auto 16px auto;
+  margin: 8px auto 48px auto;
   width: 104px;
   height: 4px;
 }
@@ -124,33 +157,49 @@ hr {
 
 .marker_wrap {
   font-size: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .marker {
-  background: linear-gradient(transparent 60%, #6cf 60%);
+  background: linear-gradient(transparent 60%, #e9c3ea 60%);
 }
 
 .icon {
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 32px;
   width: 120px;
   height: 120px;
 }
 
 .title_md {
-  text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .tools {
   display: flex;
   flex-flow: row wrap;
 }
+@media screen and (max-width: 600px) {
+  .tools {
+    justify-content: space-between;
+    gap: 1.2em;
+  }
+}
+@media screen and (max-width: 540px) {
+  .tools {
+    gap: 1em;
+  }
+}
 
-.tools > li {
-  text-align: center;
+.tools > li,
+.account_item {
   width: 20%;
+}
+@media screen and (max-width: 600px) {
+  .tools > li,
+.account_item {
+    width: 30%;
+  }
 }
 
 .tools_item {
@@ -158,7 +207,7 @@ hr {
 }
 
 .clickable {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .works::after {
@@ -169,16 +218,17 @@ hr {
 
 .example {
   float: left;
-  margin-right: 16px;
+  margin-right: 32px;
   width: 24%;
+}
+@media screen and (max-width: 600px) {
+  .example {
+    width: 30%;
+  }
 }
 
 .example_img {
   width: 100%;
-}
-
-.qr {
-  width: 15%;
 }
 
 .design {
@@ -190,13 +240,8 @@ hr {
   justify-content: space-around;
 }
 
-.account_item {
-  text-align: center;
-  width: 20%;
-}
-
 .account_icon {
-  width: 80%;
+  width: 100%;
 }
 
 .contact {
@@ -235,10 +280,6 @@ footer {
     font-size: 32px;
   }
 
-  .menu_item {
-    font-size: 18px;
-  }
-
   hr {
     margin: 8px auto 24px auto;
   }
@@ -249,18 +290,6 @@ footer {
 
   .icon {
     margin: 0 0 16px 0;
-  }
-
-  .tools > li,
-.account_item,
-.example,
-.qr {
-    width: 30%;
-  }
-
-  .tools_item,
-.account_icon {
-    width: 100%;
   }
 
   .address {
