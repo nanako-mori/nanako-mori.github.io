@@ -231,6 +231,53 @@ hr {
     width: 100%;
 }
 
+.d_flex {
+  display: flex;
+  @include mq(md) {
+    flex-direction: column;
+  }
+}
+
+.mq600_work {
+  @include mq(md) {
+    .clickable {
+      text-align: center;
+    }
+  }
+}
+
+.search_lowest_price {
+  width: 80%;
+  @include mq(md) {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.search_lowest_price_link {
+  width: 90%;
+  display: block;
+  @include mq(md) {
+    width: 100%;
+  }
+}
+
+.search_lowest_price_img {
+  width: 100%;
+}
+
+.works_description {
+  @include mq(md) {
+    margin-top: 18px;
+  }
+}
+
+.search_lowest_price + .works_description {
+  .marker_wrap {
+    text-align: center;
+  }
+}
+
 .design {
     display: block;
 }
